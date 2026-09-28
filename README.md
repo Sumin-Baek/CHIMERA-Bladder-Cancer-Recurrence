@@ -11,7 +11,7 @@ The submission ranked **3rd** on the final leaderboard.
 > so that the leaderboard result can be traced back to the exact pipeline.
 
 - Challenge: <https://chimera.grand-challenge.org/>
-- Team NMIL: Sumin Baek (DGIST), Jeonghwan Kim, Seungjun Lee
+- Team NMIL: Sumin Baek, Jeonghwan Kim, Seungjun Lee
 
 ## Method overview
 
