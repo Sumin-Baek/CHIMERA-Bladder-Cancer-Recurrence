@@ -1,0 +1,16 @@
+torch==1.13.1
+torchvision==0.14.1
+
+timm
+
+Pillow
+
+numpy<2.0
+pandas
+SimpleITK
+
+scikit-learn
+openslide-python
+opencv-python-headless
+tifffile
+imagecodecs
