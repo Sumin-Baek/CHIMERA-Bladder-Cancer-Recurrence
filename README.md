@@ -24,9 +24,9 @@ clinical JSON ──► one-hot (11 categorical) + standardised (age, no_instill
 RNA JSON ──► 8 hand-curated gene sets × {mean, std, median, max, q75} ──► standardised ──► RNA vector (40)
 
                      ┌────────────────────────────────────────────────────┐
-[clin, rna, wsi] ──► │ per-modality MLP → 3 tokens (+pos. emb.)          │
-                     │ → 4 pre-norm transformer layers (8 heads, d=256)  │ ──► sigmoid risk (submitted as is)
-                     │ → multi-head attention → softmax gate → MLP       │
+[clin, rna, wsi] ──► │ per-modality MLP → 3 tokens (+pos. emb.)           │
+                     │ → 4 pre-norm transformer layers (8 heads, d=256)   │ ──► sigmoid risk (submitted as is)
+                     │ → multi-head attention → softmax gate → MLP        │
                      └────────────────────────────────────────────────────┘
                               AdvancedBCGTransformerNet (my_survival_model.py)
 ```
