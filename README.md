@@ -132,9 +132,7 @@ The code path executed for the submission is unchanged.
 
 ## As-submitted notes
 
-At inference, `StandardScaler.fit_transform` is applied per patient (n = 1), so the RNA features
-and the two numerical clinical features are constant at test time. The submitted model therefore
-effectively used the one-hot clinical features and the WSI vector.
+The model was trained on all three modalities. At inference, however, StandardScaler.fit_transform is applied per patient (n = 1), which sets the RNA features and the two numerical clinical features to zero for every test case. The submitted predictions therefore effectively depended on the one-hot clinical features and the WSI vector.
 
 ## Citation
 
